@@ -1,0 +1,19 @@
+<apex:page controller="wizard_class">
+<apex:form >
+    <apex:pageBlock title="Enter Account Details">
+        <apex:pageBlockSection collapsible="false" columns="1">
+            
+            <apex:inputField value="{!a.Name}"/>
+            <apex:inputField value="{!a.Type}"/>
+            <apex:inputField value="{!a.Industry}"/>
+            <apex:inputField value="{!a.Phone}"/>
+            <apex:inputField value="{!a.Fax}"/>
+            
+        </apex:pageBlockSection>
+        
+        <apex:pageblockButtons >
+            <apex:commandButton value="Next Page" action="{!pageB}"/>
+        </apex:pageblockButtons>
+    </apex:pageBlock>
+</apex:form>    
+</apex:page>
